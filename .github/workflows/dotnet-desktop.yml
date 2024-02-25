@@ -42,14 +42,14 @@ jobs:
       # Update the above line with the actual path and name of your test project
 
     # Optional: If you want to create a NuGet package for your library
-    - name: Pack
-      run: dotnet pack StatisticsCalculator/StatisticsCalculator/StatisticsCalculator.csproj --configuration Release --no-build --output nupkgs
-      # Update the above line with the actual path and name of your project
+    # - name: Pack
+    #   run: dotnet pack StatisticsCalculator/StatisticsCalculator/StatisticsCalculator.csproj --configuration Release --no-build --output nupkgs
+    #   # Update the above line with the actual path and name of your project
 
     # Optional: Upload the generated NuGet package as an artifact
-    - name: Upload NuGet Package
-      if: success()
-      uses: actions/upload-artifact@v3
-      with:
-        name: NuGet Packages
-        path: nupkgs/*.nupkg
+    # - name: Upload NuGet Package
+    #   if: success()
+    #    uses: actions/upload-artifact@v3
+    #   with:
+    #     name: NuGet Packages
+    #     path: nupkgs/*.nupkg
