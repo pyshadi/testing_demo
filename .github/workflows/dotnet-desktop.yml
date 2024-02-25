@@ -30,15 +30,15 @@ jobs:
 
     # Restore dependencies
     - name: Restore Dependencies
-      run: dotnet restore StatisticsCalculator.sln # Update this to your solution's name
+      run: dotnet restore StatisticsCalculator/StatisticsCalculator/StatisticsCalculator.sln # Update this to your solution's name
 
     # Build your library
     - name: Build
-      run: dotnet build StatisticsCalculator/StatisticsCalculator.sln --configuration ${{ matrix.configuration }} --no-restore
+      run: dotnet build StatisticsCalculator/StatisticsCalculator/StatisticsCalculator.sln --configuration ${{ matrix.configuration }} --no-restore
 
     # Run tests
     - name: Test
-      run: dotnet test StatisticsCalculator/StatisticsCalculator.Tests/StatisticsCalculator.Tests.csproj --no-restore --verbosity normal
+      run: dotnet test StatisticsCalculator/StatisticsCalculator/StatisticsCalculator.Tests/StatisticsCalculator.Tests.csproj --no-restore --verbosity normal
       # Update the above line with the actual path and name of your test project
 
     # Optional: If you want to create a NuGet package for your library
