@@ -15,8 +15,8 @@ These instructions will help you get a copy of the project up and running on you
 Clone the repository to your local machine:
 
 ```
-git clone https://github.com/yourusername/StatisticsCalculator.git
-cd StatisticsCalculator
+git clone https://github.com/pyshadi/testing_demo.git
+cd testing_demo/StatisticsCalculator
 dotnet build
 dotnet test
 ```
