@@ -1,4 +1,4 @@
-# StatisticsCalculator (testing demo)
+# StatisticsCalculator (TDD demo)
 
 StatisticsCalculator is a C# library for calculating basic statistical measures, including mean, variance, and standard deviation from a list of numbers.
 
